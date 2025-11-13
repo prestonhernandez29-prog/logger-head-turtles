@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loggerhead Sea Turtles - Marine Reptile Conservation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(to bottom, #1a5f7a 0%, #2d8bba 50%, #86c8d8 100%);
+        }
+        
+        header {
+            background: rgba(26, 95, 122, 0.95);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+        
+        nav {
+            background: rgba(45, 139, 186, 0.9);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        nav a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #1a5f7a;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #2d8bba;
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            color: #2d8bba;
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .info-box {
+            background: #e8f4f8;
+            border-left: 4px solid #2d8bba;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+        
+        .fun-fact {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+        
+        ul, ol {
+            margin-left: 2rem;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            background: rgba(26, 95, 122, 0.95);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .stat-card {
+            background: #f0f8ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .stat-card h4 {
+            color: #1a5f7a;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-card p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2d8bba;
+        }
+        
+        strong {
+            color: #1a5f7a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🐢 Loggerhead Sea Turtles 🐢</h1>
+        <p>Caretta caretta</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#physical">Body Features</a></li>
+            <li><a href="#habitat">Where They Live</a></li>
+            <li><a href="#diet">What They Eat</a></li>
+            <li><a href="#life-cycle">Life Cycle</a></li>
+            <li><a href="#threats">Why They're Endangered</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="intro">
+            <h2>Introduction</h2>
+            <p>Loggerhead sea turtles are marine reptiles in our oceans. Their scientific name is <em>Caretta caretta</em> and they got the name "loggerhead" becuase their heads are really big, like the size of a log. These turtles are part of the Cheloniidae family which includes most types of sea turtles.</p>
+            
+            <div class="warning-box">
+                <strong>⚠️ Important:</strong> Loggerhead sea turtles are <strong>endangered</strong>, which means they might disappear completely if we don't help them. Their numbers have gone down a lot in the past 100 years because of human activities. They really need our help to survive.
+            </div>
+            
+            <p>These turtles can be found in all the major oceans including the Atlantic Ocean, Pacific Ocean, Indian Ocean, and the Mediterranean Sea. They spend almost their entire lives in saltwater. Female turtles only come onto beaches for a few hours to lay their eggs and then they go right back into the ocean.</p>
+            
+            <div class="fun-fact">
+                <strong>Fun Fact:</strong> Loggerhead sea turtles have been around for over 150 million years. They were swimming in the oceans when dinosaurs were still alive.
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h4>Length</h4>
+                    <p>90 cm</p>
+                    <small>(about 3 feet)</small>
+                </div>
+                <div class="stat-card">
+                    <h4>Weight</h4>
+                    <p>135 kg</p>
+                    <small>(about 300 pounds)</small>
+                </div>
+                <div class="stat-card">
+                    <h4>Lifespan</h4>
+                    <p>70-80 years</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Maturity Age</h4>
+                    <p>35 years</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="physical">
+            <h2>Physical Features</h2>
+            
+            <div class="warning-box">
+                <strong>⚠️ Endangered Species:</strong> Even though loggerheads have special features, it doesn't protect them from human threats. Their population keeps declining which is why they are endangered.
+            </div>
+            
+            <h3>Shell</h3>
+            <p>Loggerheads have two main parts to their shell. The top shell is called the <strong>carapace</strong> and the bottom shell is called the <strong>plastron</strong>. The carapace is usually reddish-brown which helps them blend in with their environment. The plastron is typically pale yellow.</p>
+            
+            <p>The carapace is the dorsal (top) part of the shell and the plastron is the ventral (bottom) part. Both are made of bone covered by hard plates called scutes.</p>
+            
+            <h3>Head and Jaws</h3>
+            <p>The most noticeable thing about loggerheads is their huge head. Inside that big head are really strong jaw muscles that give them an incredible bite force. Their jaws work like a tool for crushing hard prey like clams, crabs and conch shells.</p>
+            
+            <p>Unlike humans who have soft mouths, loggerheads have a hard beak made of <strong>keratin</strong> which is the same material as fingernails. This beak doesn't have nerve endings so they can eat jellyfish without feeling the painfull stings from the jellyfish's <strong>nematocysts</strong> (stinging cells).</p>
+            
+            <h3>Flippers</h3>
+            <p>Loggerhead turtles have four flippers with claws on each one. These powerful flippers help them swim and also dig nests in the sand when females come ashore to lay eggs. Sea turtles cannot pull their head and flippers inside their shell for protection like some other turtles can.</p>
+            
+            <div class="fun-fact">
+                <strong>Adaptation:</strong> Loggerheads have salt glands near their eyes that remove extra salt from their body when they drink ocean water. Sometimes it looks like they are crying but they are actually just getting rid of salt.
+            </div>
+        </section>
+        
+        <section id="habitat">
+            <h2>Habitat and Where They Live</h2>
+            
+            <div class="warning-box">
+                <strong>⚠️ Habitat Loss:</strong> Even though loggerheads can live in many different ocean habitats, human activities are destroying these environments. This is a major reason why they are endangered.
+            </div>
+            
+            <h3>Different Ocean Environments</h3>
+            <p>Loggerhead sea turtles live in several different marine environments throughout their lives:</p>
+            
+            <p><strong>Pelagic habitat:</strong> The open ocean far from shore</p>
+            <p><strong>Neritic habitat:</strong> Shallow coastal waters</p>
+            <p><strong>Benthic habitat:</strong> Near the ocean floor where they feed</p>
+            <p><strong>Estuarine habitat:</strong> Where rivers meet the ocean</p>
+            
+            <div class="info-box">
+                <strong>Temperature:</strong> Loggerheads prefer water temperatures between 13°C and 28°C. When females are ready to nest they prefer warmer waters around 27-28°C.
+            </div>
+            
+            <p>One of the most amazing things about loggerheads is how far they can migrate. They can travel huge distances across entire oceans. Scientists use <strong>satellite telemetry</strong> to track their movements by putting special tags on them that send signals to satelites.</p>
+            
+            <p>A famous loggerhead named Adelita was the first sea turtle ever tracked across an entire ocean. She traveled about 10,500 kilometers (6,500 miles) from Mexico all the way to Japan where she was born. This proved that loggerheads make <strong>trans-oceanic migrations</strong> which means traveling from one side of an ocean to the other.</p>
+            
+            <div class="warning-box">
+                <strong>Endangered Everywhere:</strong> Loggerheads face threats everywhere they go - nesting beaches, feeding areas and migration routes. This makes protecting these endangered turtles really challenging because we need to protect them across entire oceans.
+            </div>
+            
+            <h3>Where Different Ages Live</h3>
+            <ul>
+                <li><strong>Baby turtles:</strong> After hatching they swim to floating Sargassum seaweed and live there for several years</li>
+                <li><strong>Young turtles:</strong> They move to shallow coastal areas and bays where there is lots of food</li>
+                <li><strong>Adults:</strong> Mature turtles travel between feeding grounds and nesting beaches</li>
+            </ul>
+        </section>
+        
+        <section id="diet">
+            <h2>Diet and What They Eat</h2>
+            
+            <div class="warning-box">
+                <strong>⚠️ Food Problems:</strong> Pollution and overfishing are reducing the food available to these endangered turtles. When loggerheads can't find enough food they become weak and less likely to survive.
+            </div>
+            
+            <h3>What's On the Menu</h3>
+            <p>Loggerhead sea turtles are classified as <strong>omnivores</strong> which means they eat both plants and animals. However they mostly eat meat and focus on bottom-dwelling invertebrates. An <strong>invertebrate</strong> is an animal without a backbone like crabs, clams and jellyfish.</p>
+            
+            <p>Marine biologists describe loggerheads as <strong>benthic carnivores</strong> because they mainly feed on organisms that live on or near the ocean floor.</p>
+            
+            <h3>Main Food Sources</h3>
+            <p>The loggerhead's diet includes many types of marine animals:</p>
+            
+            <ul>
+                <li><strong>Mollusks:</strong> Clams, mussels, squid and octopuses</li>
+                <li><strong>Crustaceans:</strong> Crabs, shrimp and other hard-shelled animals</li>
+                <li><strong>Cnidarians:</strong> Jellyfish</li>
+                <li><strong>Echinoderms:</strong> Sea urchins</li>
+                <li><strong>Other:</strong> Small fish, sponges and somtimes seaweed</li>
+            </ul>
+            
+            <h3>Special Adaptations</h3>
+            
+            <div class="fun-fact">
+                <strong>Jaw Strength:</strong> A loggerhead's jaw muscles are strong enough to crush an adult queen conch shell. This gives them access to prey that many other marine animals cannot eat.
+            </div>
+            
+            <p>Their hard beak allows them to eat jellyfish without getting stung. This is a big advantage because jellyfish are slow-moving and abundant in many ocean areas making them easy prey.</p>
+            
+            <h3>Diet Changes</h3>
+            <p>As loggerheads grow their diet changes. Scientists call this an <strong>ontogenetic shift</strong>:</p>
+            
+            <ul>
+                <li><strong>Young juveniles:</strong> Eat small animals living in the Sargassum seaweed</li>
+                <li><strong>Older juveniles:</strong> Start eating more crustaceans and mollusks from the ocean floor</li>
+                <li><strong>Adults:</strong> Mainly feed on hard-shelled benthic invertebrates</li>
+            </ul>
+        </section>
+        
+        <section id="life-cycle">
+            <h2>Life Cycle and Reproduction</h2>
+            
+            <div class="warning-box">
+                <strong>⚠️ Slow Reproduction:</strong> Loggerheads take 35 years to start having babies. This extremely slow reproduction rate means it will take many decades for endangered populations to recover.
+            </div>
+            
+            <h3>Growing Up</h3>
+            <p>It takes loggerheads a really long time to become adults. They don't reach <strong>sexual maturity</strong> (the ability to reproduce) until they are about 35 years old. Some populations mature earlier or later ranging from 17 to 33 years depending on location.</p>
+            
+            <p>This long maturity time is one reason why loggerhead populations are vulnerable. It takes decades for each individual to grow large enough to reproduce.</p>
+            
+            <h3>Mating</h3>
+            <p>When loggerheads are ready to reproduce:</p>
+            
+            <ul>
+                <li>Mating occurs in shallow waters near nesting beaches</li>
+                <li>Turtles mate every two to three years not every year</li>
+                <li>Multiple males may compete to mate with one female</li>
+            </ul>
+            
+            <h3>Nesting</h3>
+            <p>After mating female loggerheads show an amazing behavior called <strong>natal beach fidelity</strong>. This means they return to the exact same beach where they hatched to lay their own eggs. Scientists think they might use Earth's magnetic field to find thier birth beach.</p>
+            
+            <div class="fun-fact">
+                <strong>Nesting Behavior:</strong> Female loggerheads come ashore at night every 14 days during nesting season to lay eggs. They use their front flippers to clear a spot in the sand.
+            </div>
+            
+            <p>The nesting process:</p>
+            
+            <ol>
+                <li>The female crawls up the beach at night</li>
+                <li>She digs a deep hole in the sand using her rear flippers</li>
+                <li>She lays about 100-150 eggs in the hole</li>
+                <li>She covers the nest with sand and returns to the ocean</li>
+                <li>She repeats this about four times during the season</li>
+            </ol>
+            
+            <h3>Eggs and Temperature</h3>
+            <p>After the eggs are laid they develop in the sand for 49 to 58 days. Something really interesting happens - the temperature of the sand determines whether the babies will be male or female!</p>
+            
+            <div class="warning-box">
+                <strong>⚠️ Climate Change Impact:</strong> This is called <strong>temperature-dependent sex determination</strong>. Warmer sand produces more females while cooler sand produces more males. Because of climate change some nesting areas are now producing too many females and not enough males. This threatens these already endangered turtles even more.
+            </div>
+            
+            <h3>Hatching</h3>
+            <p>When baby loggerheads are ready to hatch:</p>
+            
+            <ul>
+                <li>Hatchlings are about 25 millimeters long</li>
+                <li>They emerge from the nest together usually at night</li>
+                <li>They instinctively crawl toward the ocean</li>
+                <li>They swim quickly offshore to reach floating Sargassum mats</li>
+                <li>Only a small percentage survive their first year</li>
+            </ul>
+            
+            <div class="fun-fact">
+                <strong>Swimming Behavior:</strong> When hatchlings first enter the water they swim non-stop for 24-48 hours to get as far from shore as possible. Many of these baby endangered turtles do not survive their first year due to predators and human-caused threats.
+            </div>
+        </section>
+        
+        <section id="threats">
+            <h2>Conservation and Why They're Endangered</h2>
+            
+            <h3>Endangered Status</h3>
+            <p>Loggerhead sea turtles are classified as <strong>endangered</strong> which is a serious conservation status. Being endangered means these turtles face a high risk of <strong>extinction</strong> (dying out completely) in the near future if we don't take action.</p>
+            
+            <div class="warning-box">
+                <strong>⚠️ The Situation:</strong> Scientists estimate that loggerhead populations have decreased by more than 50% over the last three generations (about 150 years). Some populations like those in the Mediterranean Sea have declined by over 80%.
+            </div>
+            
+            <h3>Current Status</h3>
+            <p>Different organizations classify loggerheads at various threat levels:</p>
+            
+            <p>IUCN: Lists them as "Vulnerable" globally but many regional populations are "Endangered"</p>
+            <p>U.S. Endangered Species Act: Protects them as "threatened" or "endangered"</p>
+            <p>CITES: Lists them in Appendix I meaning all international trade is prohibited</p>
+            
+            <p>When a species is endangered the population has become so small that the species might not survive without human help. For loggerheads their slow reproduction makes recovery very difficult.</p>
+            
+            <h3>Population Numbers</h3>
+            <ul>
+                <li>About 60,000 nesting females left worldwide</li>
+                <li>This represents a major decline from historical populations</li>
+                <li>Some beaches that once had thousands of turtles now only see a few dozen per year</li>
+            </ul>
+            
+            <h3>Main Threats</h3>
+            
+            <p><strong>Understanding why loggerheads are endangered is important for saving them.</strong> These threats work together to push populations closer to extinction.</p>
+            
+            <h4>1. Fishing Gear (Bycatch)</h4>
+            <p>The biggest threat is accidental capture in fishing equipment called <strong>bycatch</strong>. When turtles get caught in nets or on hooks they can drown because they need to surface to breathe.</p>
+            
+            <ul>
+                <li>Shrimp nets trap turtles underwater</li>
+                <li>Longline fishing hooks can snag turtles</li>
+                <li>Abandoned fishing gear continues catching turtles</li>
+            </ul>
+            
+            <h4>2. Loss of Nesting Beaches</h4>
+            <p>Coastal development destroys beaches where loggerheads lay eggs:</p>
+            
+            <ul>
+                <li>Buildings prevent turtles from accessing nesting areas</li>
+                <li>Artificial lights disorient hatchlings</li>
+                <li>Beach erosion floods nests</li>
+                <li>People and vehicals disturb nesting females</li>
+            </ul>
+            
+            <h4>3. Climate Change</h4>
+            <p>Changing environmental conditions affect loggerheads:</p>
+            
+            <ul>
+                <li>Higher sand temperatures kill eggs or create unbalanced sex ratios</li>
+                <li>Rising sea levels flood nests</li>
+                <li>Ocean temperature changes affect food sources</li>
+                <li>Changing currents affect migration</li>
+            </ul>
+            
+            <h4>4. Pollution</h4>
+            <p>Ocean pollution is a serious problem:</p>
+            
+            <ul>
+                <li><strong>Plastic:</strong> Turtles mistake plastic bags for jellyfish causing blockages</li>
+                <li><strong>Chemicals:</strong> Pesticides and toxins accumulate in turtle tissues</li>
+                <li><strong>Oil spills:</strong> Petroleum products harm turtles and their habitat</li>
+                <li><strong>Marine debris:</strong> Turtles become entangled in trash</li>
+            </ul>
+            
+            <h4>5. Predators</h4>
+            <p>Eggs and hatchlings face many threats:</p>
+            
+            <ul>
+                <li>Raccoons, foxes and pigs dig up and eat eggs</li>
+                <li>Birds prey on hatchlings</li>
+                <li>Fish and sharks eat hatchlings in the water</li>
+            </ul>
+            
+            <h3>Conservation Efforts</h3>
+            <p>Scientists and governments are working to protect loggerheads:</p>
+            
+            <p><strong>TEDs (Turtle Exclusion Devices):</strong> Special grates installed in shrimp nets that allow turtles to escape. This has significantly reduced drowning deaths.</p>
+            
+            <p>Other conservation actions:</p>
+            
+            <ul>
+                <li>Protecting nesting beaches</li>
+                <li>Lighting regulations in coastal communities</li>
+                <li>Satellite tracking programs</li>
+                <li>International protection agreements</li>
+                <li>Beach patrols to monitor nesting</li>
+                <li>Education programs</li>
+                <li>Marine protected areas</li>
+                <li>Rehabilitation centers</li>
+            </ul>
+            
+            <h3>How You Can Help</h3>
+            
+            <ol>
+                <li>Reduce plastic use</li>
+                <li>Participate in beach cleanups</li>
+                <li>Choose sustainable seafood</li>
+                <li>Turn off beach lights</li>
+                <li>Never disturb nesting females or hatchlings</li>
+                <li>Fill in holes on beaches</li>
+                <li>Report injured turtles</li>
+                <li>Spread awareness</li>
+            </ol>
+        </section>
+        
+        <section>
+            <h2>Conclusion</h2>
+            <p>Loggerhead sea turtles are remarkable marine reptiles that have survived for millions of years. Their powerful jaws, navigation abilities and long lifespans make them extraordinary creatures. However they face serious threats from human activities and climate change that have made them endangerd.</p>
+            
+            <div class="warning-box">
+                <strong>⚠️ Time is Running Out:</strong> Loggerheads are endangered and need our help now. Without immediate action we risk losing these ancient animals forever.
+            </div>
+            
+            <p>Understanding the biology and behavior of loggerheads is important for developing conservation strategies. By protecting nesting beaches, reducing bycatch, addressing climate change and decreasing pollution we can help ensure these endangered turtles continue swimming in our oceans.</p>
+            
+            <div class="fun-fact">
+                <strong>Remember:</strong> Every action counts. Whether it is reducing plastic use or learning about these animals, you can make a difference in the survival of loggerhead sea turtles.
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p><strong>Loggerhead Sea Turtle Information Project</strong></p>
+        <p>Made by Hernandez for school</p>
+    </footer>
+</body>
+</html>
